@@ -21,14 +21,27 @@ project "FlipRendering"
 
     includedirs
 	{
+		"%{wks.location}/src/FlipCore/Public",
+		"%{wks.location}/src/FlipRendering/Public",
+		
+		"%{wks.location}/vendor/glfw/include",
+		"%{wks.location}/vendor/glad/include",
 	}
 
 	links
 	{
+		"opengl32.lib",
+		"Glad",
 	}
 
     filter "system:windows"
 		systemversion "latest"
+		
+		defines
+		{
+			"GLCORE_PLATFORM_WINDOWS",
+			"GLFW_INCLUDE_NONE"
+		}
 
     filter "configurations:Debug"
 		defines "FLIP_DEBUG"

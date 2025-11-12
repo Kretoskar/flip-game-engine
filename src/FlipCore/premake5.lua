@@ -21,6 +21,7 @@ project "FlipCore"
 
     includedirs
 	{
+		"%{wks.location}/src/FlipCore/Public",
 	}
 
 	links

@@ -16,7 +16,8 @@ project "FlipSandbox"
 	includedirs
 	{
 		"%{wks.location}/src/FlipCore/Public",
-		"%{wks.location}/src/FlipRendering/Public"
+		"%{wks.location}/src/FlipRendering/Public",
+		"%{wks.location}/src/FlipSandbox/Public"
 	}
 
 	links

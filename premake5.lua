@@ -16,6 +16,11 @@ workspace "FlipEngine"
 
 outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
+group "Dependencies"
+	include "vendor/GLFW"
+	include "vendor/glad"
+group ""
+
 group "Flip"
     include "src/FlipCore"
     include "src/FlipRendering"
