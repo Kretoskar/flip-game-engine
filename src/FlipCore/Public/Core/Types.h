@@ -13,3 +13,6 @@
 
 #define i64 int64_t
 #define u64 uint64_t
+
+#define f32 float
+#define f64 double

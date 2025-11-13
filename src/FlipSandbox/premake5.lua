@@ -17,13 +17,15 @@ project "FlipSandbox"
 	{
 		"%{wks.location}/src/FlipCore/Public",
 		"%{wks.location}/src/FlipRendering/Public",
-		"%{wks.location}/src/FlipSandbox/Public"
+		"%{wks.location}/src/FlipSandbox/Public",
+		"%{wks.location}/vendor/glfw/include",
+		"%{wks.location}/vendor/glad/include",
 	}
 
 	links
 	{
 		"FlipCore",
-		FlipRendering
+		"FlipRendering",
 	}
 
     filter "system:windows"

@@ -32,6 +32,7 @@ project "FlipRendering"
 	{
 		"opengl32.lib",
 		"Glad",
+		"GLFW"
 	}
 
     filter "system:windows"
